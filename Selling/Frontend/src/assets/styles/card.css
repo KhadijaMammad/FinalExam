@@ -1,0 +1,43 @@
+.card-image{
+    width: 100%;
+}
+.card-container{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-body{
+    border: 1px solid red;
+    width: 350px;
+    padding: 3px;
+}
+.card-name, .card-description, .card-degrees{
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 18px;
+}
+.product-heading{
+    margin-top: 3%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.search-btn{
+    margin-top: 2%;
+    padding: 5px 12px;
+    border: none;
+    border-bottom: 1px solid orange;
+    border-left: 1px solid red;
+}
+.card-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.card-buttons button{
+    padding: 8px 9px;
+    border: 1px solid white;
+    background-color: white;
+}

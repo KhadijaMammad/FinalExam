@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    /* background-color: bisque; */
+}
+.first-icons{
+    display: flex;
+    gap: 10px;
+}
+.first-icons i{
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+.first-icons i:hover{
+    color: red;
+}
+
+.connect{
+    display: flex;
+    gap: 2.5rem;
+}
+.first-telephone, .first-email{
+    display: flex;
+}
+
+.second-section{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+.list{
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}
+.list:hover{
+    color: orange;
+}
+.second-lists ul{
+    display: flex;
+    gap: 15px;
+}

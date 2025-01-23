@@ -1,0 +1,12 @@
+.nopage{
+    align-items: center;
+    display: flex;
+    margin-top: 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+.nopage-text{
+    font-size: 25px;
+    color: blueviolet;
+    font-weight: bold;
+}
