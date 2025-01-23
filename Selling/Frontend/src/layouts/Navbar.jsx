@@ -1,7 +1,6 @@
 import React from "react";
-import '../assets/styles/navbar.css'
-import { NavLink } from "react-router-dom";
-
+import "../assets/styles/navbar.css";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -17,12 +16,24 @@ export default function Navbar() {
                 <i class="fa-brands fa-linkedin"></i>
               </div>
               <div className="connect">
+                <div className="navbar-icons">
+                  <Link to={"./basket"}>
+                    <i
+                      style={{ color: "orange" }}
+                      class="fa-solid fa-cart-shopping"
+                    ></i>
+                  </Link>     
+                  <Link><i style={{ color: "red" }} class="fa-solid fa-heart"></i></Link>          
+                   </div>
                 <div className="first-telephone">
-                  <i style={{color: "orange"}} class="fa-solid fa-phone"></i>
+                  <i style={{ color: "orange" }} class="fa-solid fa-phone"></i>
                   <p>(+1) 234 5678 9101</p>
                 </div>
                 <div className="first-email">
-                  <i style={{color: 'orange'}} class="fa-solid fa-envelope"></i>
+                  <i
+                    style={{ color: "orange" }}
+                    class="fa-solid fa-envelope"
+                  ></i>
                   <p>shop@yourdomain.com</p>
                 </div>
               </div>
@@ -30,18 +41,25 @@ export default function Navbar() {
           </div>
           <div className="second-section">
             <div className="second-logo">
-                <h1>Selling<span style={{width:"8px", color:"orange"}}>.</span></h1>
+              <h1>
+                Selling<span style={{ width: "8px", color: "orange" }}>.</span>
+              </h1>
             </div>
             <div className="second-lists">
-                <ul>
-                   <NavLink to={"./notpage"} className="list">Home</NavLink>
-                   <NavLink className="list">Products</NavLink>
-                   <NavLink className="list">About Us</NavLink>
-                   <NavLink className="list">Specials</NavLink>
-                   <NavLink className="list">Testimonials</NavLink>
-                   <NavLink className="list">Blog</NavLink>
-                   <NavLink className="list">Contact</NavLink>
-                </ul>
+              <div className="menu-bar">
+              <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul>
+                <NavLink to={"./notpage"} className="list">
+                  Home
+                </NavLink>
+                <NavLink className="list">Products</NavLink>
+                <NavLink className="list">About Us</NavLink>
+                <NavLink className="list">Specials</NavLink>
+                <NavLink className="list">Testimonials</NavLink>
+                <NavLink className="list">Blog</NavLink>
+                <NavLink className="list">Contact</NavLink>
+              </ul>
             </div>
           </div>
         </div>

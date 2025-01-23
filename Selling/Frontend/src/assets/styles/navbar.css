@@ -53,3 +53,21 @@
     display: flex;
     gap: 15px;
 }
+.menu-bar{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .left{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-bar{
+        display: flex;
+        top: 20px;
+        right: 5px;
+    }
+    .second-lists{
+        display: none;
+    }
+}

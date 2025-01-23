@@ -8,7 +8,7 @@
     justify-content: space-between;
 }
 .card-body{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 350px;
     padding: 3px;
 }
@@ -25,11 +25,15 @@
     align-items: center; 
 }
 .search-btn{
-    margin-top: 2%;
     padding: 5px 12px;
     border: none;
     border-bottom: 1px solid orange;
     border-left: 1px solid red;
+}
+.add-search{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
 }
 .card-buttons{
     display: flex;
@@ -40,4 +44,13 @@
     padding: 8px 9px;
     border: 1px solid white;
     background-color: white;
+}
+.add-btn{
+    padding: 5px 6px;
+    background-color: greenyellow;
+    color: black;
+}
+.navbar-icons{
+    display: flex;
+    gap: 1.5rem;
 }
